@@ -1,3 +1,5 @@
-h1 {
-	color: rgba(0, 255, 255, .5);
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
