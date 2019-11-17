@@ -15,10 +15,11 @@ body {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
+  justify-content: space-around;
 }
 
 .navItem {
-  width: 25%;
+  width: 15%;
   text-align: center;
   list-style-type: none;
 }
@@ -30,16 +31,28 @@ body {
 	width: 100%;
 
 	color: #f1c40f;
-	background-color: black;
 
 	text-decoration: none;
 	text-align: middle;
 	font-size: 200%;
+	border-bottom: 5px solid tranparent;
 }
 
 .navLink.navActive {
-	color: white;
+	color: blue;
+	border-bottom: 5px solid blue;
 }
+
+.navItem:hover .navLink {
+	color: red;
+	border-bottom: 5px solid red;
+}
+
+.navItem:hover .navLink.navActive{
+	color: blue;
+	border-bottom: 5px solid blue;
+}
+
 
 
 h1 {

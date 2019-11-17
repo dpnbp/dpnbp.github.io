@@ -2,19 +2,13 @@
 //create navigation menu to be used on all subpages
 
 var navMenu = document.createElement("ul");
-
-
-document.body.appendChild(navMenu);
 navMenu.className = "navMenu";
-//navMenu.setAttribute("style", "overflow: hidden; .position: fixed; top: 0; padding: 0; margin: 0; width: 100%;")
 
 var navItem = document.createElement("li");
 navItem.className = "navItem";
-//navItem.setAttribute("style", "width: 25%; background: #16a085; padding: 0; text-align: center; list-style-type: none;")
 
 var navLink = document.createElement("a");
 navLink.className = "navLink";
-//navLink.setAttribute("style", "float: left; line-height: 50px; width: 100%; color: #f1c40f; background-color: black; margin: auto; text-decoration: none; ext-align: middle; font-size: 200%;")
 
 navItem.appendChild(navLink);
 
@@ -39,6 +33,6 @@ for (var i = 0; i<c.length; i++){
 	}
 }
 
-
-
+var nav = document.getElementById("nav");
+nav.appendChild(navMenu);
 
