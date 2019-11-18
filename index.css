@@ -1,0 +1,17 @@
+#mainMain {
+	display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+	background: yellow;
+}
+
+#mainLeft {
+	text-align: center;
+	width: 50%;
+}
+
+#mainRight {
+	text-align: center;
+	width: 50%;
+}

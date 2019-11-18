@@ -16,6 +16,8 @@ body {
   flex-flow: row nowrap;
   align-items: stretch;
   justify-content: space-around;
+	
+	background: white;
 }
 
 .navItem {
@@ -30,12 +32,12 @@ body {
 	line-height: 50px;
 	width: 100%;
 
-	color: #f1c40f;
-
 	text-decoration: none;
 	text-align: middle;
 	font-size: 200%;
+	
 	border-bottom: 5px solid tranparent;
+	
 }
 
 .navLink.navActive {
@@ -53,9 +55,6 @@ body {
 	border-bottom: 5px solid blue;
 }
 
-
-
-h1 {
-	margin-top: 250px;
-	height: 1000px;
+#navBuffer {
+	margin-top: 55px;
 }

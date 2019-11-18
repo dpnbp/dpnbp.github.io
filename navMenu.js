@@ -13,7 +13,7 @@ navLink.className = "navLink";
 navItem.appendChild(navLink);
 
 navLink.textContent = "home";
-navLink.href = "/";
+navLink.href = "index.html";
 navMenu.appendChild(navItem.cloneNode(true));
 navLink.firstChild.textContent = "blog";
 navLink.href = "blog.html";
