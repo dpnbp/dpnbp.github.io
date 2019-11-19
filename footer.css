@@ -1,3 +1,18 @@
 #footer {
+	display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+
 	background: green;
 }
+
+#footerMotto{
+	margin-left: 5px;
+	background: yellow;
+}
+
+#footerLinks{
+	background: yellow;
+}
+
