@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	background: Aqua;
 }
 
 .navMenu {
@@ -17,7 +18,7 @@ body {
   align-items: stretch;
   justify-content: space-around;
 	
-	background: white;
+	background: aqua;
 }
 
 .navItem {

@@ -1,18 +1,72 @@
 #footer {
 	display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
-  justify-content: space-between;
-
-	background: green;
-}
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	}
 
 #footerMotto{
-	margin-left: 5px;
-	background: yellow;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: pink;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+}
+
+#footerMotto p{
+	box-sizing: border-box;
+	margin: 0;
+	font-size: 1.25em;
+	height: 50%;
+}
+#footerMotto p:first-of-type {
+	padding: 5px 10px 5px 10px;
+}
+
+#footerMotto p:last-of-type {
+	padding: 5px 10px 5px 10px;
+}
+
+#footerMotto hr {
+	margin: auto;
+	padding: 0;
+	width: 50%;
 }
 
 #footerLinks{
+	display: flex;
+
+	background: pink;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#footerLinks .fab, #footerLinks .far {
+	background: green;
+	line-height: 70px;
+	width: 70px;
+}
+
+#footer .fa-linkedin-in {
+	background: red;
+}
+
+#footer .fa-github {
+	background: orange;
+}
+
+#footer .fa-twitter {
 	background: yellow;
 }
 
+#footer .fa-instagram {
+	background: green;
+}
+
+#footer .fa-envelope {
+	background: blue;
+}
