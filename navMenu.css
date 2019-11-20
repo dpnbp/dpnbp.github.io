@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: Aqua;
+	background: #ecf0f1;
 
   min-height: 100vh;
   display: flex;
@@ -31,7 +31,9 @@ main {
   align-items: stretch;
   justify-content: space-around;
 	
-	background: aqua;
+	background: #ecf0f1;
+
+	border-bottom: 5px solid #ecf0f1;
 }
 
 .navItem {
@@ -51,22 +53,24 @@ main {
 	font-size: 200%;
 	
 	border-bottom: 5px solid tranparent;
+
+	color: #2c3e50;
 	
 }
 
 .navLink.navActive {
-	color: blue;
-	border-bottom: 5px solid blue;
+	color: #c0392b;
+	border-bottom: 5px solid #c0392b;
 }
 
 .navItem:hover .navLink {
-	color: red;
-	border-bottom: 5px solid red;
+	color: #c0392b;
+	border-bottom: 5px solid #c0392b;
 }
 
 .navItem:hover .navLink.navActive{
-	color: blue;
-	border-bottom: 5px solid blue;
+	color: #2c3e50;
+	border-bottom: 5px solid #2c3e50;
 }
 
 #navBuffer {

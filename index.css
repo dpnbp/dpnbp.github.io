@@ -3,21 +3,25 @@
   flex-flow: row nowrap;
   align-items: stretch;
   justify-content: space-around;
-	background: yellow;
+	background: #ecf0f1;
 }
 
 #mainLeft {
 	text-align: center;
-	border: 5px solid red;
+	border: 5px solid #ecf0f1;
 	width: 50%;
 }
 
 #mainLeft img {
+	box-sizing: border-box;
 	max-width: 100%;
-	height: auto;
+	vertical-align: middle;
 }
 
 #mainRight {
+	box-sizing: border-box;
 	text-align: center;
+	border: 5px solid #ecf0f1;
 	width: 50%;
+	padding: 5px;
 }
