@@ -4,7 +4,7 @@
 	padding: 0;
 	width: 100%;
 
-	border-top: 1px solid #c0392b;
+	border-top: 0px solid #2c3e50;
 	}
 
 #footerMotto{
@@ -63,15 +63,14 @@
 }
 
 #footer .fa-envelope {
-	background: #c0392b;
-	color: #ecf0f1;
-}
-
-#footer .fa-instagram {
-	background: #bdc3c7;
+	background: #ecf0f1;
 }
 
 #footer .fa-twitter {
+	background: #bdc3c7;
+}
+
+#footer .fa-instagram {
 	background: #ecf0f1;
 }
 
@@ -79,10 +78,10 @@
 	opacity: 85%;
 }
 
-#footerLinks a:hover .fab{ 
+#footerLinks a:hover .fab { 
 	color: #f39c12;
 }
 
 #footerLinks a:hover .far {
-	color: #bdc3c7;
+	color: #f39c12;
 }

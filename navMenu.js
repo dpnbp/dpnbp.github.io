@@ -29,7 +29,7 @@ var c = navMenu.children
 for (var i = 0; i<c.length; i++){
 	if (document.title.includes(c[i].firstChild.textContent)){
 		c[i].firstChild.className = "navLink navActive";
-		c[i].firstChild.removeAttribute("href");
+		//c[i].firstChild.removeAttribute("href");
 	}
 }
 
