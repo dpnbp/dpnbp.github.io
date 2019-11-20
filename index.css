@@ -8,7 +8,13 @@
 
 #mainLeft {
 	text-align: center;
+	border: 5px solid red;
 	width: 50%;
+}
+
+#mainLeft img {
+	max-width: 100%;
+	height: auto;
 }
 
 #mainRight {
