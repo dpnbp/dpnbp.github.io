@@ -1,29 +1,38 @@
-#mainMain {
-	display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
-  justify-content: space-around;
+main {
 	background: #2c3e50;
 }
 
+#mainMain {
+	display: block;
+	height: 100%;
+}
+
 #mainLeft {
-	text-align: center;
-	border: 5px solid transparent;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+
+	float: left;
 	width: 50%;
+	height: 100%;
+	text-align: center;
 }
 
 #mainLeft img {
 	box-sizing: border-box;
-	max-width: 100%;
 	vertical-align: middle;
+	width: 75%;
 }
 
 #mainRight {
-	box-sizing: border-box;
-	text-align: center;
-	border: 5px solid transparent;
+	display: inline-block;
+	float: right;
 	width: 50%;
-	padding: 5px;
+	height: 100%;
+	box-sizing: border-box;
+	border-left: 1px solid #c0392b;
+	text-align: center;
+	padding: 10px;
 }
 
 #mainRight p {
