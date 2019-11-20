@@ -3,7 +3,9 @@ main {
 }
 
 #mainMain {
-	display: block;
+	display: flex;
+	align-items: center;
+  justify-content: center;
 	height: 100%;
 }
 
@@ -20,12 +22,15 @@ main {
 
 #mainLeft img {
 	box-sizing: border-box;
-	vertical-align: middle;
-	width: 75%;
+	width: 70%;
 }
 
 #mainRight {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 	float: right;
 	width: 50%;
 	height: 100%;
@@ -37,4 +42,8 @@ main {
 
 #mainRight p {
 	color: #ecf0f1;
+}
+
+#mainRight hr {
+	width: 100%;
 }
