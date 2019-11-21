@@ -12,7 +12,8 @@ main {
 #mainLeft {
 	display: flex;
 	align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+	flex-direction: column;
 
 	float: left;
 	width: 50%;
@@ -39,19 +40,34 @@ main {
 	-webkit-filter: blur(5px);
 }
 
-#picFrame img {
+#mainLeft img {
 	display: block;
 	box-sizing: border-box;
 	border: 5px solid #ecf0f1;
 	padding: 0;
 	margin: 0;
-	width: 100%;
+	width: 75%;
 
 	position: relative;
 }
 
-#picFrame {
-	width: 90%;
+.caption {
+	color: white;
+	font-size: 24px;
+}
+	
+
+.picSelect {
+	display: inline-block;
+	height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.picSelectors, .picSelect, .caption {
+	z-index: 1;
 }
 
 #mainLeft .fas {
