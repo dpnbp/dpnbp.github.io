@@ -18,13 +18,45 @@ main {
 	width: 50%;
 	height: 100%;
 	text-align: center;
-}
 
-#mainLeft img {
+	position: relative;
+
+	overflow: hidden;
+
+	background: black;
+
+	border: 5px solid #c0392b;
 	box-sizing: border-box;
-	width: 70%;
 }
 
+#picBG {
+	display: block;
+	background-image: url(A.jpg);
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-filter: blur(5px);
+}
+
+#picFrame img {
+	display: block;
+	box-sizing: border-box;
+	border: 5px solid #ecf0f1;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+
+	position: relative;
+}
+
+#picFrame {
+	width: 90%;
+}
+
+#mainLeft .fas {
+	position: relative;
+}
 #mainRight {
 	display: flex;
 	align-items: center;

@@ -38,6 +38,7 @@ main {
 	background: #ecf0f1;
 
 	border-bottom: 5px solid transparent;
+	z-index: 99;
 }
 
 .navItem {
@@ -75,5 +76,5 @@ main {
 }
 
 #navBuffer {
-	margin-top: 55px;
+	margin-top: 60px;
 }
