@@ -39,24 +39,25 @@ function choosePic(index) {
 		case 1:
 			picBG.style.backgroundImage = "url('b.png')";
 			pic.src = "b.png";
-			picCaption.textContent = "Picture #2 (source - mixedinkey.com)"
+			picCaption.textContent = "Pic#2 (source - mixedinkey.com)"
 		break;
 
 		case 2:
 			picBG.style.backgroundImage = "url('c.png')";
 			pic.src = "c.png";
-			picCaption.textContent = "Picture #3 (source - mixedinkey.com)"
+			picCaption.textContent = "Pic#3 (source - mixedinkey.com)"
 		break;
 
 		case 3:
 			picBG.style.backgroundImage = "url('d.png')";
 			pic.src = "d.png";
-			picCaption.textContent = "Picture #4 (source - mixedinkey.com)"
+			picCaption.textContent = "Pic#4 (source - mixedinkey.com)"
 		break;
 
 		default:
 			picBG.style.backgroundImage = "url('a.png')";
-			pic.src = "d.png";
+			pic.src = "a.png";
+			picCaption.textContent = "Error: Index Out of Range"
 
 	}
 }
