@@ -32,7 +32,6 @@ main {
 
 #picBG {
 	display: block;
-	background-image: url(A.jpg);
 	background-size: 100% 100%;
 	position: absolute;
 	width: 100%;
@@ -40,8 +39,7 @@ main {
 	-webkit-filter: blur(5px);
 }
 
-#mainLeft img {
-	display: block;
+#pic {
 	box-sizing: border-box;
 	border: 5px solid #ecf0f1;
 	padding: 0;
@@ -51,19 +49,47 @@ main {
 	position: relative;
 }
 
-.caption {
+#picFrame {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#picFrame .fas {
 	color: white;
-	font-size: 24px;
+	opacity: 60%;
+	z-index: 1;
+	margin: 10px;
+}
+
+#picFrame .fas:hover {
+	opacity: 100%;
+	cursor: pointer;
+}
+
+#picCaption {
+	color: white;
+	margin-bottom: 0;
+	z-index: 1;
+
+	position: relative;
 }
 	
 
 .picSelect {
 	display: inline-block;
-	height: 15px;
-  width: 15px;
-  margin: 0 2px;
+	height: 25px;
+  width: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
   background-color: white;
   border-radius: 50%;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.picSelect:hover {
+	opacity: 100%;
 }
 
 .picSelectors, .picSelect, .caption {

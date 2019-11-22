@@ -6,9 +6,10 @@
 	<title>Dan Patel | home</title>
 	<link rel="stylesheet" href="navMenu.css">
 	<link rel="stylesheet" href="footer.css">
-	<script src="https://kit.fontawesome.com/789451132b.js" crossorigin="anonymous"></script>
-
 	<link rel="stylesheet" href="index.css">
+
+	<!-- Icons courtesy of Font Awesome Free Plan -->
+	<link rel="stylesheet" href="css/all.css">
 </head>
 
 <body>
@@ -25,16 +26,21 @@
 	<div id="mainMain">
 		<div id="mainLeft">
 			<div id="picBG"></div>
-			<div class="caption">This is a caption!</div>
-			<img src="A.JPG">
+			<h2 id="picCaption">This is a caption!</h2>
+			<div id="picFrame">
+				<span id="picLeft" class="fas fa-chevron-circle-left fa-2x"></span>
+				<img id="pic" src="A.JPG">	
+				<span id="picRight" class="fas fa-chevron-circle-right fa-2x"></span>
+			</div>
 			<div class="picSelectors">
 				<div class="picSelect"></div>
 				<div class="picSelect"></div>
 				<div class="picSelect"></div>
 				<div class="picSelect"></div>
-			</div>
+			</div>	
+			<script type="text/javascript" src="carousel.js"></script>
 		</div>
-	
+
 		<div id="mainRight">
 			<h3>Note: I've only verified rendering in Google Chrome</h3>
 			<p>Hi! I'm Dan Patel. Automation & Controls Engineer by day and CompSci student by night.</p>
