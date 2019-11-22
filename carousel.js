@@ -4,10 +4,31 @@ choosePic(picIndex);
 document.getElementById("picRight").addEventListener("click", rightClick);
 document.getElementById("picLeft").addEventListener("click", leftClick);
 
+var picSelectors = document.getElementsByClassName("picSelect");
+
+for(let i = 0; i<picSelectors.length; i++){
+	picSelectors[i].addEventListener("click", function (event){
+		picIndex = i;
+		choosePic(picIndex);
+	});
+}
+
+
 function choosePic(index) {
 	var picBG = document.getElementById("picBG");
 	var pic = document.getElementById("pic");
 	var picCaption = document.getElementById("picCaption");
+	var picSelects = document.getElementsByClassName("picSelect");
+
+	for(let i=0; i<picSelects.length; i++){
+		if (index == i){
+			picSelects[i].className = "picSelect picActive";
+		}
+		else{
+			picSelects[i].className = "picSelect";
+		}
+	}
+
 	switch(index) {
 		case 0:
 			picBG.style.backgroundImage = "url('a.png')";
@@ -34,8 +55,8 @@ function choosePic(index) {
 		break;
 
 		default:
-			picBG.style.backgroundImage = "url('A.jpg')";
-			pic.src = "A.jpg";
+			picBG.style.backgroundImage = "url('a.png')";
+			pic.src = "d.png";
 
 	}
 }

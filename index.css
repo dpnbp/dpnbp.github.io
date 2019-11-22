@@ -69,14 +69,18 @@ main {
 
 #picCaption {
 	color: white;
-	margin-bottom: 0;
+	margin-bottom: 5px;
+	padding: 5px;
 	z-index: 1;
-
+	background: rgba(100,100,100,0.5);
+	border-radius: 10px;
 	position: relative;
+	white-space: nowrap;
 }
 	
 
 .picSelect {
+	margin-top: 5px;
 	display: inline-block;
 	height: 25px;
   width: 25px;
@@ -86,6 +90,10 @@ main {
   border-radius: 50%;
   opacity: 50%;
   cursor: pointer;
+}
+
+.picSelect.picActive {
+	opacity: 100%;
 }
 
 .picSelect:hover {
