@@ -1,37 +1,40 @@
+#sidebarContainer::-webkit-scrollbar{
+	width: 12px;
+}
+
+#sidebarContainer::-webkit-scrollbar-track {
+	background-color: #c0392b;
+}
+
+#sidebarContainer::-webkit-scrollbar-thumb {
+	background-color: #ecf0f1;
+}
+
+#articleContainer::-webkit-scrollbar{
+	width: 12px;
+}
+
+#articleContainer::-webkit-scrollbar-track {
+	background-color: #c0392b;
+}
+
+#articleContainer::-webkit-scrollbar-thumb {
+	background-color: #2c3e50;
+}
+
 #mainGrid {
 	display: grid;
-	grid-template-columns: 33% auto;
-	grid-template-rows: 25% calc(75% - 70px);
+	grid-template-columns: auto minmax(0, 1fr);
+	grid-template-rows: calc(100%);
 	grid-template-areas:
-		"header article"
 		"sidebar article";
 	background-color: #ecf0f1;
-	margin-bottom: -70px;
+	height: calc(100% - 140px);
 }
 
-#blogHeader {
-	grid-area: blogHeader;
-
-  overflow: hidden;
- 	background-size: cover;
-  background-position: center;
-  background-image: url("blogLogo.png");
-
-	border: 5px solid #c0392b;
+#sidebarContainer::-webkit-scrollbar {
+	width: 12px;
 }
-
-#blogHeader img {
-	width: 100%;
-}
-
-#headerContainer {
-	grid-area: header;
-	flex-shrink: 1;
-	background-color: #2c3e50;
-
-	border: 5px solid #c0392b;
-}
-
 #sidebarContainer {
 	grid-area: sidebar;
 
@@ -40,10 +43,13 @@
 
 	background-color: #2c3e50;
 	border: 5px solid #c0392b;
+	border-right: 1px solid #c0392b;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
 
 	min-height: 0;
 	min-width: 0;
-	overflow: auto;
 }
 
 .sidebarCategory {
@@ -51,14 +57,22 @@
 	padding: 0;
 	margin-left: 11px;
 	margin-top: 11px;
+	margin-right: 11px;
 
 	color: #ecf0f1;
 
 	list-style-type: none;
+
+	font-size: 1.25em;
 }
 
 .sidebarLink {
-	margin-left: 21px;
+	cursor: pointer;
+	margin-left: 31px;
+	margin-top: 7px;
+
+	font-size: 0.85em;
+	text-decoration: underline;
 }
 
 #articleContainer {
@@ -67,4 +81,37 @@
 
 	border: 5px solid #c0392b;
 	border-left: none;
+	border-right: 1px solid #c0392b;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	min-height: 0;
+}
+
+#defaultBlog {
+	position: absolute;
+	visibility: hidden;
+}
+
+#blogPost {
+	visibility: visible;
+}
+
+#artTitle {
+	margin: 0;
+	padding: 0;
+	margin-left: 21px;
+	margin-top: 11px;
+}
+
+#artAuthor {
+	margin: 0;
+	padding: 0;
+	margin-left: 51px;
+}
+
+#artContent{
+	margin-left: 21px;
+	margin-right: 21px;
 }
