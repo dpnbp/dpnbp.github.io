@@ -39,19 +39,19 @@ function choosePic(index) {
 		case 1:
 			picBG.style.backgroundImage = "url('b.png')";
 			pic.src = "b.png";
-			picCaption.textContent = "Pic#2 (source - mixedinkey.com)"
+			picCaption.textContent = "Pic#2 (Photo by Romina veliz on Unsplash)"
 		break;
 
 		case 2:
 			picBG.style.backgroundImage = "url('c.png')";
 			pic.src = "c.png";
-			picCaption.textContent = "Pic#3 (source - mixedinkey.com)"
+			picCaption.textContent = "Pic#3 (Photo by Krys Amon on Unsplash)"
 		break;
 
 		case 3:
 			picBG.style.backgroundImage = "url('d.png')";
 			pic.src = "d.png";
-			picCaption.textContent = "Pic#4 (source - mixedinkey.com)"
+			picCaption.textContent = "Pic#4 (Photo by maximalfocus on Unsplash)"
 		break;
 
 		default:
