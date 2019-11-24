@@ -23,7 +23,12 @@ main {
 }
 
 #mainBox * {
-	text-align: left;
+	text-align: left
+	color: #ecf0f1;
+}
+
+#mainBox a:visited, a:active {
+	color: #ecf0f1;
 }
 
 #picBG {
@@ -39,4 +44,9 @@ main {
 	z-index: -1;
 
 	margin: -5px;
+}
+
+.dlButton{
+  border: none;
+  cursor: pointer;
 }
