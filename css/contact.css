@@ -1,0 +1,42 @@
+main {
+	text-align: center;
+	border: 5px solid #c0392b;
+	box-sizing: border-box;
+
+	overflow: hidden;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#mainBox {
+	width: 75%;
+	height: 75%;
+	background: #2c3e50DD;
+	
+	position: relative;
+	border-radius: 10px;
+	border: 5px solid #ecf0f1;
+	padding: 15px;
+	color: #ecf0f1;
+}
+
+#mainBox * {
+	text-align: left;
+}
+
+#picBG {
+	display: block;
+	box-sizing: border-box;
+	background-size: 100% 100%;
+	position: absolute;
+	width: calc(100% + 5px);
+	padding: 0;
+	height: calc(100% - 120px);
+	-webkit-filter: blur(5px);
+	background-image: url('../img/e.png');
+	z-index: -1;
+
+	margin: -5px;
+}
